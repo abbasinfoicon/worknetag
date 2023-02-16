@@ -9,10 +9,20 @@
             overflow: hidden;
             @include border-radius(24px);
 
+            @media (max-width: 991px) {
+                height: auto;
+                width: 100%;
+            }
+
             img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+
+                @media (max-width: 991px) {
+                    height: auto;
+                    width: 100%;
+                }
             }
         }
     }

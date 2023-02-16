@@ -8,6 +8,10 @@
             @include border-radius(22px);
             overflow: hidden;
 
+            @media (max-width: 768px) {
+                height: 50vh;
+            }
+
             &:after {
                 content: '';
                 position: absolute;

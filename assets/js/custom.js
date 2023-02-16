@@ -66,3 +66,8 @@ $('.counter').each(function () {
 
 });
 
+$('.navbar-toggler').click(function() {
+    $(this).find('i').toggleClass('fa-bars-staggered fa-xmark');
+    $('body').toggleClass("overflow-body");
+});
+

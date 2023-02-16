@@ -13,6 +13,10 @@ section {
   @media (max-width: 1024px) {
     padding: 80px 0;
   }
+
+  @media (max-width: 768px) {
+    padding: 50px 0;
+  }
 }
 
 .container {
@@ -46,12 +50,16 @@ section {
   &-full {
     padding: 40px 0;
 
+    @media (max-width: 991px) {
+      padding: 15px 0;
+    }
+
     .row {
       align-items: center;
 
       .col {}
 
-      .col-lg-7.col-md-12 {
+      .col-lg-7.col-sm-12 {
         @media (max-width: 991px) {
           order: 3;
         }
@@ -59,19 +67,34 @@ section {
 
       .cutsom-btn {
         @media (max-width: 991px) {
-          margin-right: 70px;
+          margin-right: 50px;
+        }
+
+        @media (max-width: 500px) {
+          margin-right: 40px;
+          padding: 6px 15px;
         }
       }
     }
   }
 
   .navbar {
+    padding: 0;
+
+    @media (max-width: 991px) {
+      align-items: center;
+      justify-content: flex-end;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
 
     .navbar-toggler {
-      position: absolute;
-      top: -38px;
-      right: 0;
       color: $red;
+      position: absolute;
+      outline: none;
+      box-shadow: none;
+      z-index: 99;
     }
 
   }
@@ -79,18 +102,48 @@ section {
 
 .logo {
   a {
-    img {}
+    img {
+      @media (max-width: 500px) {
+        width: 180px;
+      }
+    }
   }
 }
 
 .menu {
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 991px) {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #f4f4f4;
+    z-index: 9;
+    height: 100vh;
+    padding: 55px 25px 25px;
+    width: 250px;
+    box-shadow: -15px 0px 17px -7px rgba(0,0,0,0.3);
+  }
+
   &-main {
     display: flex;
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 991px) {
+      justify-content: flex-start;
+      align-items: baseline;
+    }
+
     li {
       display: inline-block;
+
+      @media (max-width: 991px) {
+        display: block;
+        width: 100%;
+      }
 
       a {
         font-size: 1.5rem;
@@ -100,6 +153,17 @@ section {
 
         @media (max-width: 1280px) {
           font-size: 1.25rem;
+        }
+
+        @media (max-width: 1024px) {
+          padding: 0 15px;
+        }
+
+        @media (max-width: 991px) {
+          padding: 10px 0;
+          border-bottom: 1px solid #ccc;
+          display: block;
+          width: 100%;
         }
 
         &:hover {
@@ -180,6 +244,10 @@ section {
           color: $lgtblack;
           display: block;
           margin-bottom: 12px;
+
+          @media (max-width: 768px) {
+            margin-bottom: 5px;
+          }
 
           &:hover {
             color: $red;

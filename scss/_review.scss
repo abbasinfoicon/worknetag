@@ -3,6 +3,10 @@
         margin-bottom: 0;
         margin-top: 30px;
 
+        @media (max-width: 991px) {
+            margin-top: 15px;
+        }
+
         .img-style {
             width: 66px;
             height: 66px;
@@ -40,9 +44,19 @@
                 overflow: hidden;
                 @include border-radius(24px);
 
+                @media (max-width: 991px) {
+                    height: auto;
+                    width: 100%;
+                }
+
                 img {
                     height: 100%;
                     object-fit: cover;
+
+                    @media (max-width: 991px) {
+                        height: auto;
+                        width: 100%;
+                    }
                 }
             }
         }
