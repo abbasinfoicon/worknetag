@@ -981,6 +981,7 @@ section {
 }
 .review-carousel .item .img-style {
   min-width: 548px;
+  max-width: 548px;
   height: 539px;
   overflow: hidden;
   border-radius: 24px;
@@ -994,6 +995,7 @@ section {
     height: auto;
     width: 100%;
     min-width: auto;
+    max-width: auto;
   }
 }
 .review-carousel .item .img-style img {
@@ -1032,6 +1034,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
 .review-content-say {
   height: 400px;
