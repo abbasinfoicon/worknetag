@@ -340,10 +340,8 @@ section {
   }
 }
 
-@media (max-width: 1024px) {
-  .menu {
-    justify-content: center;
-  }
+.menu {
+  justify-content: center;
 }
 @media (max-width: 991px) {
   .menu {

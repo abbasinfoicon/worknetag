@@ -111,9 +111,7 @@ section {
 }
 
 .menu {
-  @media (max-width: 1024px) {
-    justify-content: center;
-  }
+  justify-content: center;
 
   @media (max-width: 991px) {
     position: absolute;
