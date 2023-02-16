@@ -453,6 +453,11 @@ section {
 .footer {
   padding-top: 60px;
 }
+@media (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
 .footer-logo {
   margin-bottom: 40px;
 }
@@ -478,6 +483,8 @@ section {
 @media (max-width: 768px) {
   .footer-menu ul li a {
     margin-bottom: 5px;
+    border-bottom: 1px solid #F4F4F3;
+    padding-bottom: 5px;
   }
 }
 .footer-menu ul li a:hover {

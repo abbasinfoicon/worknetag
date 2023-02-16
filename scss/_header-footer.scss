@@ -227,6 +227,10 @@ section {
 .footer {
   padding-top: 60px;
 
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+
   &-logo {
     margin-bottom: 40px;
 
@@ -257,6 +261,8 @@ section {
 
           @media (max-width: 768px) {
             margin-bottom: 5px;
+            border-bottom: 1px solid $lgray;
+            padding-bottom: 5px;
           }
 
           &:hover {
