@@ -1,0 +1,79 @@
+.slider {
+    padding: 0;
+
+    &-home {
+        .item {
+            position: relative;
+            height: 90vh;
+            @include border-radius(22px);
+            overflow: hidden;
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-color: transparent;
+                /* For browsers that do not support gradients */
+                background-image: linear-gradient(to right, rgb(0 0 0 / 77%), transparent)
+            }
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .caption {
+                max-width: 615px;
+                position: absolute;
+                z-index: 1;
+                top: 50%;
+                left: 7.5%;
+                transform: translateY(-50%);
+
+                @media (max-width: 768px) {
+                    max-width: 100%;
+                }
+
+                h1 {
+                    color: $white;
+                    margin-bottom: 3px;
+                    letter-spacing: 1.5px;
+                    line-height: 1.35;
+                }
+
+                .line {
+                    position: relative;
+                    height: 6px;
+                    background-color: $red;
+                    width: 54px;
+                    margin-bottom: 35px;
+                }
+
+                h3 {
+                    color: #D1D0D0;
+                    margin-bottom: 30px;
+                    letter-spacing: 0.4px;
+                    line-height: 1.4;
+                }
+
+                a {
+                    &:hover {
+                        color: $white;
+                        border-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.line {
+    position: relative;
+    height: 6px;
+    background-color: $red;
+    width: 54px;
+    margin-bottom: 35px;
+}

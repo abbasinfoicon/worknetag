@@ -1,0 +1,29 @@
+.title {
+    margin-bottom: 25px;
+
+    p {
+        font-size: 1.5em;
+        color: $red;
+        margin-bottom: 12px;
+        @include barlow(bold);
+        letter-spacing: 1px;
+    }
+
+    h3 {
+        font-size: 2.5em;
+        color: $lgtblack;
+        @include barlow(bold);
+        letter-spacing: 0.6px;
+    }
+
+    h2 {
+        color: $lgtblack;
+        @include barlow(bold);
+        letter-spacing: 0.6px;
+
+        span {
+            color: $red;
+            text-decoration: line-through;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.separates {
+    padding: 85px 0;
+    overflow-x: hidden;
+
+    &-left {
+        @media (max-width: 768px) {
+            margin-bottom: 50px;
+        }
+
+        .title {
+            h2 {
+                @include barlow(medium);
+                color: $white;
+            }
+        }
+    }
+
+    &-img {
+        .img-style {
+            height: 434px;
+            overflow: hidden;
+            @include border-radius(24px);
+
+            @media (min-width: 1440px) {
+                width: 960px;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

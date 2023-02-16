@@ -1,0 +1,268 @@
+/*========================================================================================================
+================================ Header Scss ===================================================================
+===========================================================================================================*/
+header,
+section,
+footer {
+  @include full-width;
+}
+
+section {
+  padding: 150px 0;
+
+  @media (max-width: 1024px) {
+    padding: 80px 0;
+  }
+}
+
+.container {
+  &-fluid {
+    padding-left: 80px;
+    padding-right: 80px;
+
+    @media (max-width: 1366px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    @media (max-width: 1199px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (max-width: 768px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &-custom {
+    max-width: 1640px;
+    margin: 0 auto;
+  }
+}
+
+.header {
+  &-full {
+    padding: 40px 0;
+
+    .row {
+      align-items: center;
+
+      .col {}
+
+      .col-lg-7.col-md-12 {
+        @media (max-width: 991px) {
+          order: 3;
+        }
+      }
+
+      .cutsom-btn {
+        @media (max-width: 991px) {
+          margin-right: 70px;
+        }
+      }
+    }
+  }
+
+  .navbar {
+
+    .navbar-toggler {
+      position: absolute;
+      top: -38px;
+      right: 0;
+      color: $red;
+    }
+
+  }
+}
+
+.logo {
+  a {
+    img {}
+  }
+}
+
+.menu {
+  &-main {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      display: inline-block;
+
+      a {
+        font-size: 1.5em;
+        color: $lgtblack;
+        display: block;
+        padding: 0 20px;
+
+        @media (max-width: 1280px) {
+          font-size: 1.25em;
+        }
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+.cutsom-btn {
+  color: $white;
+  background-color: $red;
+  display: inline-block;
+  padding: 13px 40px;
+  border-radius: 40px;
+  line-height: 30px;
+  border: 1px solid $red;
+  white-space: nowrap;
+
+  @media (max-width: 1280px) {
+    padding: 10px 30px;
+    line-height: 1.4;
+  }
+
+  &.hover {
+    color: $lgtblack;
+    background-color: transparent;
+    border-color: $lgtblack;
+
+    &:hover {
+      color: $white;
+      background-color: $red;
+      border-color: $red;
+    }
+  }
+
+  &:hover {
+    color: $lgtblack;
+    background-color: transparent;
+    border-color: $lgtblack;
+  }
+
+
+
+  i {
+    margin-left: 10px;
+  }
+}
+
+.footer {
+  padding-top: 60px;
+
+  &-logo {
+    margin-bottom: 40px;
+
+    a {
+      display: inline-block;
+
+      img {
+        width: 198px;
+      }
+    }
+  }
+
+  &-menu {
+    margin-bottom: 30px;
+
+    h3 {
+      color: $lgtblack;
+      margin-bottom: 15px;
+      @include barlow(medium);
+    }
+
+    ul {
+      li {
+        a {
+          color: $lgtblack;
+          display: block;
+          margin-bottom: 12px;
+
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 30px;
+  }
+}
+
+.social-icon {
+  text-align: center;
+  margin-bottom: 30px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+    li {
+      a {
+        font-size: 1em;
+        display: block;
+        width: 29px;
+        height: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $red;
+        color: $white;
+        @include border-radius(100%);
+
+        &:hover {
+          background-color: $lgtblack;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.sm-menu {
+  text-align: center;
+  margin-bottom: 20px;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    li {
+      a {
+        font-size: 1em;
+        color: $lgtblack;
+
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+
+  p {
+    font-size: 1em;
+    color: $lgtblack;
+  }
+}

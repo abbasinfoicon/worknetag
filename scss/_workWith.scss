@@ -1,0 +1,15 @@
+.workWith {
+
+    &-content {
+        padding: 30px;
+
+        h3 {
+            color: $lgtblack;
+        }
+
+        p {
+            font-size: 1.25em;
+            color: $txt;
+        }
+    }
+}

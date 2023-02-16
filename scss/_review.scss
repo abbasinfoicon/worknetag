@@ -1,0 +1,117 @@
+.review {
+    .aboutBx-sec {
+        margin-bottom: 0;
+        margin-top: 30px;
+
+        p {
+            min-height: 72px;
+        }
+
+        .img-style {
+            width: 66px;
+            height: 66px;
+
+            p {
+                font-size: 1.75em;
+            }
+        }
+    }
+
+    &-carousel {
+        padding: 100px 0 250px;
+
+        @media (max-width: 1024px) {
+            padding: 50px 0 100px;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 190px;
+
+            @media (max-width: 991px) {
+                flex-direction: column;
+            }
+
+            @media (max-width: 1024px) {
+                gap: 50px;
+            }
+
+            .img-style {
+                min-width: 548px;
+                height: 539px;
+                overflow: hidden;
+                @include border-radius(24px);
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .owl-nav {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+
+            button {
+                width: 68px;
+                height: 68px;
+                background-color: $white !important;
+                border-radius: 100%;
+                font-size: 1.5rem !important;
+                color: $red !important;
+
+                &.disabled {
+                    background-color: transparent !important;
+                    color: lighten($lgtblack, 30%) !important;
+                    cursor: no-drop;
+                }
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-say {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media (max-width: 991px) {
+                height: auto;
+            }
+
+            p {
+                width: 65%;
+            }
+
+            img {
+                width: auto;
+                max-width: fit-content;
+                margin-left: auto;
+            }
+        }
+
+        p {
+            strong {
+                color: $lgtblack;
+            }
+        }
+    }
+
+    .title {
+        @media (max-width: 767px) {
+            display: block!important;
+        }
+    }
+}
