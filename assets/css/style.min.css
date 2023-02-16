@@ -733,6 +733,7 @@ section {
     right: -15px;
     width: auto;
     height: 214px;
+    background-color: #F04040;
   }
 }
 .aboutUs-img .img-style {
@@ -915,6 +916,11 @@ section {
 .workWith-content {
   padding: 30px;
 }
+@media (max-width: 767px) {
+  .workWith-content {
+    padding: 15px;
+  }
+}
 .workWith-content h3 {
   color: #2B3032;
 }
@@ -945,6 +951,11 @@ section {
 @media (max-width: 1024px) {
   .review-carousel {
     padding: 50px 0 100px;
+  }
+}
+@media (max-width: 767px) {
+  .review-carousel {
+    padding: 15px 0;
   }
 }
 .review-carousel .item {
