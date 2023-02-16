@@ -977,6 +977,7 @@ section {
   .review-carousel .item .img-style {
     height: auto;
     width: 100%;
+    min-width: auto;
   }
 }
 .review-carousel .item .img-style img {
