@@ -94,13 +94,13 @@ section {
       display: inline-block;
 
       a {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         color: $lgtblack;
         display: block;
         padding: 0 20px;
 
         @media (max-width: 1280px) {
-          font-size: 1.25em;
+          font-size: 1.25rem;
         }
 
         &:hover {
@@ -211,7 +211,7 @@ section {
 
     li {
       a {
-        font-size: 1em;
+        font-size: 1rem;
         display: block;
         width: 29px;
         height: 29px;
@@ -247,7 +247,7 @@ section {
 
     li {
       a {
-        font-size: 1em;
+        font-size: 1rem;
         color: $lgtblack;
 
         &:hover {
@@ -262,7 +262,7 @@ section {
   text-align: center;
 
   p {
-    font-size: 1em;
+    font-size: 1rem;
     color: $lgtblack;
   }
 }

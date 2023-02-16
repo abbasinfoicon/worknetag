@@ -293,14 +293,14 @@ section {
   display: inline-block;
 }
 .menu-main li a {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #2B3032;
   display: block;
   padding: 0 20px;
 }
 @media (max-width: 1280px) {
   .menu-main li a {
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 }
 .menu-main li a:hover {
@@ -391,7 +391,7 @@ section {
   gap: 35px;
 }
 .social-icon ul li a {
-  font-size: 1em;
+  font-size: 1rem;
   display: block;
   width: 29px;
   height: 29px;
@@ -427,7 +427,7 @@ section {
   }
 }
 .sm-menu ul li a {
-  font-size: 1em;
+  font-size: 1rem;
   color: #2B3032;
 }
 .sm-menu ul li a:hover {
@@ -438,7 +438,7 @@ section {
   text-align: center;
 }
 .copyright p {
-  font-size: 1em;
+  font-size: 1rem;
   color: #2B3032;
 }
 
@@ -560,7 +560,7 @@ section {
 }
 .aboutBx-sec .img-style p {
   margin-bottom: 0;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: "Barlow-bold";
   color: #F04040;
   min-height: auto !important;
@@ -666,7 +666,7 @@ section {
   align-items: center;
 }
 .aboutUs-content .content-sec ul li i {
-  font-size: 1.063em;
+  font-size: 1.063rem;
   min-width: 25px;
   min-height: 25px;
   background-color: #F04040;
@@ -748,7 +748,7 @@ section {
   color: #2B3032;
 }
 .workWith-content p {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   color: #808080;
 }
 
@@ -764,7 +764,7 @@ section {
   height: 66px;
 }
 .review .aboutBx-sec .img-style p {
-  font-size: 1.75em;
+  font-size: 1.75rem;
 }
 .review-carousel {
   padding: 100px 0 250px;
@@ -898,14 +898,14 @@ section {
   margin-bottom: 25px;
 }
 .title p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #F04040;
   margin-bottom: 12px;
   font-family: "Barlow-bold";
   letter-spacing: 1px;
 }
 .title h3 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   color: #2B3032;
   font-family: "Barlow-bold";
   letter-spacing: 0.6px;
@@ -921,20 +921,20 @@ section {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 3.5em;
+  font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 p,
 li,
 a,
 .cutsom-btn {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }/*# sourceMappingURL=style.min.css.map */
