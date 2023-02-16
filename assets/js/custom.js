@@ -37,6 +37,28 @@ $('.review-carousel').owlCarousel({
     smartSpeed: 700,
 });
 
+$('.testimonial-carousel').owlCarousel({
+    loop: true,
+    responsiveClass: true,
+    nav: true,
+    margin: 0,
+    autoplayTimeout: 4000,
+    smartSpeed: 400,
+    center: true,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 5
+        },
+        1200: {
+            items: 5
+        }
+    }
+});
+
 
 
 /*========================================================================================================
@@ -66,7 +88,7 @@ $('.counter').each(function () {
 
 });
 
-$('.navbar-toggler').click(function() {
+$('.navbar-toggler').click(function () {
     $(this).find('i').toggleClass('fa-bars-staggered fa-xmark');
     $('body').toggleClass("overflow-body");
 });

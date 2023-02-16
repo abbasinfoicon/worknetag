@@ -951,11 +951,11 @@ section {
   font-size: 1.75rem;
 }
 .review-carousel {
-  padding: 100px 0 250px;
+  padding: 100px 0 0;
 }
 @media (max-width: 1024px) {
   .review-carousel {
-    padding: 50px 0 100px;
+    padding: 50px 0 0;
   }
 }
 @media (max-width: 767px) {
@@ -1060,6 +1060,36 @@ section {
   .review .title {
     display: block !important;
   }
+}
+
+.testimonial-carousel .item .testimonial-text p {
+  color: #fff;
+  font-size: 1rem;
+}
+.testimonial-carousel .owl-item {
+  background-color: #F04040;
+  color: #fff;
+  cursor: pointer;
+  border-top-left-radius: 16%;
+  border-bottom-right-radius: 16%;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  position: absolute;
+}
+.testimonial-carousel .owl-item.active {
+  opacity: 0.4;
+}
+.testimonial-carousel .owl-item.active + .active {
+  opacity: 0.8;
+}
+.testimonial-carousel .owl-item.center.active {
+  opacity: 1;
+}
+.testimonial-carousel .owl-item.center.active + .active {
+  opacity: 0.8;
+}
+.testimonial-carousel .owl-item.center.active + .active + .active {
+  opacity: 0.4;
 }
 
 .separates {

@@ -18,10 +18,10 @@
     }
 
     &-carousel {
-        padding: 100px 0 250px;
+        padding: 100px 0 0;
 
         @media (max-width: 1024px) {
-            padding: 50px 0 100px;
+            padding: 50px 0 0;
         }
         @media (max-width: 767px) {
             padding: 15px 0;
