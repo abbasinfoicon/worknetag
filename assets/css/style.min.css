@@ -111,6 +111,10 @@ body {
   font-family: "Barlow-regular";
   font-size: 1rem;
 }
+body .blur {
+  width: 0;
+  left: 100%;
+}
 body.overflow-body {
   overflow: hidden;
 }
@@ -122,6 +126,8 @@ body.overflow-body .blur {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
+  transition: 0.5s;
+  width: 100%;
 }
 
 .bg-gray {
@@ -347,9 +353,18 @@ section {
     background: #f4f4f4;
     z-index: 9;
     height: 100vh;
-    padding: 55px 25px 25px;
-    width: 250px;
+    padding: 0;
+    width: 0;
     box-shadow: -15px 0px 17px -7px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    display: block !important;
+    opacity: 0;
+    overflow-x: hidden;
+  }
+  .menu.show {
+    width: 250px;
+    padding: 55px 25px 25px;
+    opacity: 1;
   }
 }
 .menu-main {
@@ -391,7 +406,7 @@ section {
 @media (max-width: 991px) {
   .menu-main li a {
     padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #e5e5e5;
     display: block;
     width: 100%;
   }

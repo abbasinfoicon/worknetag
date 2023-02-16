@@ -602,7 +602,9 @@
 
     <script src="assets/js/custom.js"></script>
     <script>
-        new WOW().init();
+        if ($(window).width() > 991) {
+            new WOW().init();
+        }
     </script>
 </body>
 
