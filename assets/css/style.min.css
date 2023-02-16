@@ -77,6 +77,30 @@
 /*=====================================================================
 ==========================   main-css-all-pages  =========================
 ========================================================================*/
+html {
+  font-size: 16px;
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 body {
   float: left;
   width: 100%;
@@ -85,27 +109,7 @@ body {
   padding: 0;
   color: #2B3032;
   font-family: "Barlow-regular";
-  font-size: 16px;
-}
-@media (max-width: 1440px) {
-  body {
-    font-size: 15px;
-  }
-}
-@media (max-width: 1024px) {
-  body {
-    font-size: 14px;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    font-size: 13px;
-  }
-}
-@media (max-width: 320px) {
-  body {
-    font-size: 12px;
-  }
+  font-size: 1rem;
 }
 
 .bg-gray {
@@ -284,7 +288,6 @@ section {
 }
 
 .menu-main {
-  font-size: 0;
   display: flex;
   align-items: center;
   justify-content: center;

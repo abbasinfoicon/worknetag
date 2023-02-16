@@ -5,13 +5,7 @@
 /*=====================================================================
 ==========================   main-css-all-pages  =========================
 ========================================================================*/
-
-body {
-  @include full-width;
-  margin: 0;
-  padding: 0;
-  color: $lgtblack;
-  @include barlow(regular);
+html {
   font-size: 16px;
 
   @media (max-width: 1440px) {
@@ -29,6 +23,15 @@ body {
   @media (max-width: 320px) {
     font-size: 12px;
   }
+}
+
+body {
+  @include full-width;
+  margin: 0;
+  padding: 0;
+  color: $lgtblack;
+  @include barlow(regular);
+  font-size: 1rem;
 }
 
 .bg-gray {
