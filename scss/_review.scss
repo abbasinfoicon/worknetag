@@ -41,6 +41,14 @@
                 gap: 50px;
             }
 
+            @media (max-width: 767px) {
+                gap: 30px;
+            }
+
+            @media (max-width: 425px) {
+                gap: 15px;
+            }
+
             .img-style {
                 min-width: 548px;
                 max-width: 548px;
