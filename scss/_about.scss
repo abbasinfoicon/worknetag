@@ -7,6 +7,10 @@
         padding-top: 40px;
     }
 
+    @media (max-width: 500px) {
+        padding: 30px 0;
+    }
+
     &-sec {
         padding: 30px;
         border: 1px solid rgb(43 48 50 / 15%);

@@ -111,6 +111,10 @@
 
             p {
                 width: 65%;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
             }
 
             img {
@@ -130,6 +134,10 @@
     .title {
         @media (max-width: 767px) {
             display: block!important;
+
+            h2 {
+                margin-bottom: 25px;
+            }
         }
     }
 }

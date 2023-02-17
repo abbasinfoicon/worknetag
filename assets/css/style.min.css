@@ -259,6 +259,11 @@ section {
     padding: 50px 0;
   }
 }
+@media (max-width: 500px) {
+  section {
+    padding: 30px 0;
+  }
+}
 
 .container-fluid {
   padding-left: 80px;
@@ -661,6 +666,11 @@ section {
     padding-top: 40px;
   }
 }
+@media (max-width: 500px) {
+  .aboutBx {
+    padding: 30px 0;
+  }
+}
 .aboutBx-sec {
   padding: 30px;
   border: 1px solid rgba(43, 48, 50, 0.15);
@@ -935,7 +945,7 @@ section {
 }
 @media (max-width: 767px) {
   .workWith-content {
-    padding: 15px;
+    padding: 15px 0;
   }
 }
 .workWith-content h3 {
@@ -1064,6 +1074,11 @@ section {
 .review-content-say p {
   width: 65%;
 }
+@media (max-width: 767px) {
+  .review-content-say p {
+    width: 100%;
+  }
+}
 .review-content-say img {
   width: auto;
   max-width: -moz-fit-content;
@@ -1076,6 +1091,9 @@ section {
 @media (max-width: 767px) {
   .review .title {
     display: block !important;
+  }
+  .review .title h2 {
+    margin-bottom: 25px;
   }
 }
 
@@ -1116,6 +1134,11 @@ section {
 @media (max-width: 991px) {
   .separates {
     padding: 50px 0;
+  }
+}
+@media (max-width: 500px) {
+  .separates {
+    padding: 30px 0;
   }
 }
 @media (max-width: 991px) {
