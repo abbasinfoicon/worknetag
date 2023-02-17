@@ -642,6 +642,7 @@ section {
   margin-bottom: 5px;
   letter-spacing: 1.5px;
   line-height: 1.35;
+  font-family: "Barlow-bold";
 }
 @media (max-width: 768px) {
   .slider-home .item .caption h1 {

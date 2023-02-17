@@ -46,6 +46,7 @@
                     margin-bottom: 5px;
                     letter-spacing: 1.5px;
                     line-height: 1.35;
+                    @include barlow(bold);
 
                     @media (max-width: 768px) {
                         line-height: 1;
