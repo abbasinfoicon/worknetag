@@ -1007,7 +1007,8 @@ section {
     height: auto;
     width: 100%;
     min-width: auto;
-    max-width: auto;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
 }
 .review-carousel .item .img-style img {
