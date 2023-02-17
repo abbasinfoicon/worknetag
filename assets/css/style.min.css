@@ -609,9 +609,15 @@ section {
 }
 .slider-home .item .caption h1 {
   color: #fff;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
   letter-spacing: 1.5px;
   line-height: 1.35;
+}
+@media (max-width: 768px) {
+  .slider-home .item .caption h1 {
+    line-height: 1;
+    margin-bottom: 10px;
+  }
 }
 .slider-home .item .caption .line {
   position: relative;
@@ -619,6 +625,12 @@ section {
   background-color: #F04040;
   width: 54px;
   margin-bottom: 35px;
+}
+@media (max-width: 768px) {
+  .slider-home .item .caption .line {
+    margin-bottom: 15px;
+    height: 4px;
+  }
 }
 .slider-home .item .caption h3 {
   color: #D1D0D0;
@@ -1185,6 +1197,11 @@ h1 {
     font-size: 3rem;
   }
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+}
 
 h2 {
   font-size: 3.5rem;
@@ -1199,9 +1216,19 @@ h2 {
     font-size: 2.1rem;
   }
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
 
 h3 {
   font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 p,
