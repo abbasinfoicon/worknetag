@@ -523,6 +523,21 @@ section {
   justify-content: center;
   gap: 35px;
 }
+@media (max-width: 767px) {
+  .social-icon ul {
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .social-icon ul {
+    gap: 15px;
+  }
+}
+@media (max-width: 320px) {
+  .social-icon ul {
+    gap: 10px;
+  }
+}
 .social-icon ul li a {
   font-size: 1rem;
   display: block;
