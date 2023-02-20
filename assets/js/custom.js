@@ -70,7 +70,7 @@ $('.testimonial-carousel').owlCarousel({
 var a = 0;
 $(window).scroll(function () {
 
-    var oTop = $('.seit').offset().top - window.innerHeight;
+    var oTop = $('.counter').offset().top - window.innerHeight;
     if (a == 0 && $(window).scrollTop() > oTop) {
         $('.counter').each(function () {
             var $this = $(this),
