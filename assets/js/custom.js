@@ -64,29 +64,49 @@ $('.testimonial-carousel').owlCarousel({
 /*========================================================================================================
 ================================ COUNTER ===================================================================
 ===========================================================================================================*/
-$('.counter').each(function () {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
+function inVisible(element) {
+    var WindowTop = $(window).scrollTop();
+    var WindowBottom = WindowTop + $(window).height();
+    var ElementTop = element.offset().top;
+    var ElementBottom = ElementTop + element.height();
 
-    $({ countNum: $this.text() }).animate({
-        countNum: countTo
-    },
+    if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+        animate(element);
+}
 
-        {
+function animate(element) {
+    $('.counter').each(function () {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
 
-            duration: 2000,
-            easing: 'linear',
-            step: function () {
-                $this.text(Math.floor(this.countNum));
-            },
-            complete: function () {
-                $this.text(this.countNum);
-                //alert('finished');
-            }
+        $({ countNum: $this.text() }).animate({
+            countNum: countTo
+        },
+            {
+                duration: 2000,
+                easing: 'linear',
+                step: function () {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                    $this.text(this.countNum);
+                }
+            });
+    });
+}
 
+//When the document is ready
+$(function () {
+    $(window).scroll(function () {
+        $("[data-count]").each(function () {
+            inVisible($(this));
         });
-
+    })
 });
+
+
+
+
 
 $('.navbar-toggler').click(function () {
     $(this).find('i').toggleClass('fa-bars-staggered fa-xmark');
