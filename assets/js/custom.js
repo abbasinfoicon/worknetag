@@ -64,27 +64,23 @@ $('.testimonial-carousel').owlCarousel({
 /*========================================================================================================
 ================================ COUNTER ===================================================================
 ===========================================================================================================*/
-function inVisible(element) {
-    var WindowTop = $(window).scrollTop();
-    var WindowBottom = WindowTop + $(window).height();
-    var ElementTop = element.offset().top;
-    var ElementBottom = ElementTop + element.height();
 
-    if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
-        animate(element);
-}
 
-function animate(element) {
-    $('.counter').each(function () {
-        var $this = $(this),
-            countTo = $this.attr('data-count');
 
-        $({ countNum: $this.text() }).animate({
-            countNum: countTo
-        },
+var a = 0;
+$(window).scroll(function () {
+
+    var oTop = $('.seit').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.counter').each(function () {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            $({ countNum: $this.text() }).animate({
+                countNum: countTo
+            },
             {
-                duration: 2000,
-                easing: 'linear',
+                duration: 3000,
+                easing: 'swing',
                 step: function () {
                     $this.text(Math.floor(this.countNum));
                 },
@@ -92,16 +88,11 @@ function animate(element) {
                     $this.text(this.countNum);
                 }
             });
-    });
-}
-
-//When the document is ready
-$(function () {
-    $(window).scroll(function () {
-        $("[data-count]").each(function () {
-            inVisible($(this));
         });
-    })
+
+        a = 1;
+    }
+
 });
 
 
