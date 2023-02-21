@@ -1133,6 +1133,16 @@ section {
   max-width: fit-content;
   margin-left: auto;
 }
+@media (max-width: 767px) {
+  .review-content-say img {
+    width: 50px !important;
+  }
+}
+@media (max-width: 425px) {
+  .review-content-say img {
+    width: 30px !important;
+  }
+}
 .review-content p strong {
   color: #2B3032;
 }
