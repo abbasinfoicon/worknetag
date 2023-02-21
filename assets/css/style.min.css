@@ -1088,6 +1088,16 @@ section {
   gap: 10px;
   margin-top: 30px;
 }
+@media (max-width: 767px) {
+  .review-carousel .owl-nav {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 425px) {
+  .review-carousel .owl-nav {
+    margin-top: 5px;
+  }
+}
 .review-carousel .owl-nav button {
   width: 68px;
   height: 68px;
