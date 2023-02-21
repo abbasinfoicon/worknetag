@@ -147,6 +147,15 @@ input {
   display: none;
   bottom: 60px;
   z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 60px;
+  width: 66px;
+  height: 66px;
+  background: $red;
+  border-radius: 100%;
 
   img {}
 }
@@ -162,3 +171,6 @@ input {
 @import "separates";
 @import "title";
 @import "typstyle";
+@import "team";
+@import "contact";
+@import "jobportal";

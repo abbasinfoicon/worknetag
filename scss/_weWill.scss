@@ -27,6 +27,14 @@
         }
     }
 
+    &-content {
+        padding-left: 80px;
+
+        @media (max-width: 1024px) {
+            padding-left: 0;
+        }
+    }
+
     .w-50 {
         @media (max-width: 1024px) {
             width: 70% !important;
@@ -62,6 +70,16 @@
 
 
 .order-change {
+    .weWill-content {
+        padding-left: 0;
+        padding-right: 80px;
+
+        @media (max-width: 1024px) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
     @media (max-width: 991px) {
         flex-direction: column-reverse;
     }

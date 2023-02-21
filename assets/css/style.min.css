@@ -244,6 +244,15 @@ input:visited {
   display: none;
   bottom: 60px;
   z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 60px;
+  width: 66px;
+  height: 66px;
+  background: #F04040;
+  border-radius: 100%;
 }
 /*========================================================================================================
 ================================ Header Scss ===================================================================
@@ -934,6 +943,14 @@ section {
     width: 100%;
   }
 }
+.weWill-content {
+  padding-left: 80px;
+}
+@media (max-width: 1024px) {
+  .weWill-content {
+    padding-left: 0;
+  }
+}
 @media (max-width: 1024px) {
   .weWill .w-50 {
     width: 70% !important;
@@ -967,6 +984,16 @@ section {
   }
 }
 
+.order-change .weWill-content {
+  padding-left: 0;
+  padding-right: 80px;
+}
+@media (max-width: 1024px) {
+  .order-change .weWill-content {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 @media (max-width: 991px) {
   .order-change {
     flex-direction: column-reverse;
@@ -1329,4 +1356,389 @@ li,
 a,
 .cutsom-btn {
   font-size: 1.25rem;
+}
+
+.team {
+  padding-bottom: 0;
+}
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin: 35px;
+}
+@media (max-width: 1199px) {
+  .team-member {
+    margin: 25px 15px;
+    gap: 25px;
+  }
+}
+@media (max-width: 991px) {
+  .team-member {
+    margin: 15px 0;
+    gap: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .team-member {
+    flex-direction: column;
+    padding-bottom: 25px;
+    background-color: #fff;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -o-border-radius: 24px;
+    text-align: center;
+  }
+}
+.team-member .img-style {
+  position: relative;
+  min-width: 260px;
+  width: 260px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -o-border-radius: 24px;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .team-member .img-style {
+    min-width: auto;
+    width: auto;
+    height: auto;
+  }
+}
+.team-member .img-style img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .team-member .img-style img {
+    height: auto;
+  }
+}
+.team-member .img-style img.hoverImg {
+  opacity: 0;
+}
+@media (max-width: 500px) {
+  .team-member .img-style img.hoverImg {
+    display: none;
+  }
+}
+.team-member .img-style .overlay {
+  position: absolute;
+  bottom: -100%;
+  padding: 25px;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 22%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 22%, 100% 100%, 0% 100%);
+  background-image: radial-gradient(circle at 171% 12%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5) 86%);
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 500px) {
+  .team-member .img-style .overlay {
+    display: none;
+  }
+}
+.team-member .img-style .overlay h3,
+.team-member .img-style .overlay p {
+  color: #fff;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.team-member .img-style:hover .hoverImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+.team-member .img-style:hover .overlay {
+  bottom: 0;
+}
+.team-member .img-style:hover .statImg {
+  opacity: 0;
+}
+.team-member .details h3 {
+  color: #F04040;
+  text-transform: uppercase;
+}
+.team-member .details p {
+  color: #2B3032;
+  text-transform: uppercase;
+}
+.team-member .details a {
+  color: #2B3032;
+  margin-bottom: 55px;
+  display: block;
+}
+@media (max-width: 767px) {
+  .team-member .details a {
+    margin-bottom: 15px;
+  }
+}
+.team-member .details .social-icon {
+  margin-bottom: 0;
+}
+@media (min-width: 501px) {
+  .team-member .details ul {
+    justify-content: flex-start;
+  }
+}
+.team-member .details ul li a {
+  margin-bottom: 0;
+  color: #fff;
+  display: flex;
+}
+.contact-form {
+  margin-top: 80px;
+}
+@media (max-width: 1024px) {
+  .contact-form {
+    margin-top: 30px;
+  }
+}
+.contact-form label {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .contact-form label {
+    font-size: 1.25rem;
+  }
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  height: 65px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  font-size: 1.25rem;
+  padding: 12px 24px;
+  color: #2B3032;
+  background-color: #FAFAFA;
+  border: 1px solid #D7D7D7;
+}
+@media (max-width: 991px) {
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    height: 50px;
+    padding: 10px 24px;
+  }
+}
+.contact-form input::-moz-placeholder, .contact-form select::-moz-placeholder, .contact-form textarea::-moz-placeholder {
+  color: #a8b1b4;
+}
+.contact-form input::placeholder,
+.contact-form select::placeholder,
+.contact-form textarea::placeholder {
+  color: #a8b1b4;
+}
+.contact-form input:focus, .contact-form input:active,
+.contact-form select:focus,
+.contact-form select:active,
+.contact-form textarea:focus,
+.contact-form textarea:active {
+  outline: none;
+  box-shadow: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.contact-form textarea {
+  height: 210px;
+}
+.contact-form .btn-submit {
+  height: 58px;
+  display: block;
+  height: 58px;
+  display: block;
+  width: 100%;
+  border-radius: 35px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+@media (max-width: 991px) {
+  .contact-form .btn-submit {
+    height: 50px;
+  }
+}
+.contact-form .btn-submit:hover {
+  background-color: #F04040;
+  color: #fff;
+}
+.contact-form .form-group {
+  margin-bottom: 45px;
+}
+@media (max-width: 1024px) {
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+}
+.contact-dtls {
+  margin-top: 80px;
+}
+@media (max-width: 1024px) {
+  .contact-dtls {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .contact-dtls .map {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-dtls .map {
+    margin-bottom: 30px;
+  }
+}
+.contact-dtls-info {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 80px;
+}
+@media (max-width: 1024px) {
+  .contact-dtls-info {
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+}
+.contact-dtls-info:last-child {
+  margin-bottom: 0;
+}
+.contact-dtls-info .info h3 {
+  color: #2B3032;
+}
+.contact-dtls-info .info a {
+  color: #808080;
+  margin-bottom: 10px;
+  display: block;
+}
+.contact-dtls-info .info a.cutsom-btn {
+  color: #2B3032;
+  margin-bottom: 0;
+  width: auto;
+  display: inline-block;
+}
+.contact-dtls-info .info a.cutsom-btn:hover {
+  color: #fff;
+}
+
+.pl80 {
+  padding-left: 80px;
+}
+@media (max-width: 1024px) {
+  .pl80 {
+    padding-left: 0;
+  }
+}
+
+.jobportal .contact-form {
+  margin-top: 0;
+}
+.jobportal .contact-form .title p {
+  font-size: 1.25rem;
+  color: #2B3032;
+  font-family: "Barlow-regular";
+  letter-spacing: normal;
+}
+.jobportal .contact-form .form-group {
+  margin-bottom: 20px;
+}
+.jobportal-list {
+  position: relative;
+  padding: 48px;
+  background-color: #F4F4F3;
+  border: 1px solid #BDBFBF;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+@media (max-width: 767px) {
+  .jobportal-list {
+    padding: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .jobportal-list {
+    padding: 15px;
+  }
+}
+.jobportal-list h2 {
+  font-size: 2.5rem;
+  color: #2B3032;
+  font-family: "Barlow-bold";
+  margin-bottom: 20px;
+}
+.jobportal-list ul {
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .jobportal-list ul {
+    margin-bottom: 15px;
+  }
+}
+.jobportal-list ul li {
+  color: #2B3032;
+}
+.jobportal-list ul li i {
+  color: #F04040;
+  margin-right: 15px;
+}
+.jobportal-list a.department {
+  color: #2B3032;
+  background-color: #ebebeb;
+  position: absolute;
+  right: 48px;
+  top: 48px;
+  padding: 3px 10px;
+}
+@media (max-width: 767px) {
+  .jobportal-list a.department {
+    right: 30px;
+    top: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .jobportal-list a.department {
+    right: 15px;
+    top: 15px;
+  }
+}
+.bredcrumb {
+  position: relative;
+}
+.bredcrumb ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.bredcrumb ul li a {
+  font-size: 1.25rem;
+  color: #2B3032;
+}
+.bredcrumb ul li img {
+  margin-left: 15px;
 }/*# sourceMappingURL=style.min.css.map */
