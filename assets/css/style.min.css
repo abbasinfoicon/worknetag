@@ -1424,12 +1424,12 @@ a,
   }
 }
 .team-member .img-style img.hoverImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   opacity: 0;
-}
-@media (max-width: 500px) {
-  .team-member .img-style img.hoverImg {
-    display: none;
-  }
 }
 .team-member .img-style .overlay {
   position: absolute;
@@ -1441,11 +1441,6 @@ a,
   background-image: radial-gradient(circle at 171% 12%, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5) 86%);
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 500px) {
-  .team-member .img-style .overlay {
-    display: none;
-  }
-}
 .team-member .img-style .overlay h3,
 .team-member .img-style .overlay p {
   color: #fff;
@@ -1453,11 +1448,6 @@ a,
   text-transform: uppercase;
 }
 .team-member .img-style:hover .hoverImg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   opacity: 1;
 }
 .team-member .img-style:hover .overlay {
@@ -1648,6 +1638,9 @@ a,
   }
 }
 
+.jobportal iframe {
+  height: 1000px;
+}
 .jobportal .contact-form {
   margin-top: 0;
 }

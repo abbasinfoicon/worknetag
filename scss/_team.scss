@@ -50,11 +50,12 @@
                 }
 
                 &.hoverImg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
                     opacity: 0;
-
-                    @media (max-width: 500px) {
-                        display: none;
-                    }
                 }
             }
 
@@ -68,9 +69,7 @@
                 background-image: radial-gradient(circle at 171% 12%, rgb(255 255 255 / 50%), rgb(0 0 0 / 50%) 86%);
                 transition: all .3s ease-in-out;
 
-                @media (max-width: 500px) {
-                    display: none;
-                }
+                
 
                 h3,
                 p {
@@ -82,11 +81,6 @@
 
             &:hover {
                 .hoverImg {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
                     opacity: 1;
                 }
 
