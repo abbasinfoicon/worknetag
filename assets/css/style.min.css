@@ -1732,6 +1732,9 @@ a,
   font-size: 1.25rem;
   color: #2B3032;
 }
-.bredcrumb ul li img {
+.bredcrumb ul li img.prev {
+  margin-right: 15px;
+}
+.bredcrumb ul li img.next {
   margin-left: 15px;
 }/*# sourceMappingURL=style.min.css.map */

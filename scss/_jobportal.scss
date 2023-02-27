@@ -1,7 +1,8 @@
 .jobportal {
-    iframe{
-        height:1000px;
+    iframe {
+        height: 1000px;
     }
+
     .contact-form {
         margin-top: 0;
 
@@ -108,7 +109,13 @@
             }
 
             img {
-                margin-left: 15px;
+                &.prev {
+                    margin-right: 15px;
+                }
+
+                &.next {
+                    margin-left: 15px;
+                }
             }
         }
     }

@@ -1,1 +1,55 @@
-a {}
+.jobportal {
+    &-details {
+        .img-style {
+            img {}
+        }
+
+        .content-style {
+            h2 {}
+
+            h3 {}
+
+            p {}
+
+            ul {
+                &.custom_ul {}
+
+                &.ul1 {}
+
+                &.ul2 {}
+
+                &.ul3 {}
+
+                li {
+                    p {
+                        span {}
+
+                    }
+
+                    span {}
+                }
+            }
+        }
+    }
+
+    &-apply {
+        h2 {}
+
+        p {}
+
+        form {
+            .form-group {
+                label {}
+
+                select,
+                input {}
+
+                input {}
+            }
+
+            h3 {}
+
+            p {}
+        }
+    }
+}
