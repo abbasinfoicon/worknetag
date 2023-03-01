@@ -1307,6 +1307,9 @@ section {
   color: #F04040;
   text-decoration: line-through;
 }
+.title h2 span.withDash {
+  text-decoration: none;
+}
 
 h1 {
   font-size: 4rem;

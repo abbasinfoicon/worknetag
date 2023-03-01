@@ -24,6 +24,10 @@
         span {
             color: $red;
             text-decoration: line-through;
+
+            &.withDash {
+                text-decoration: none;
+            }
         }
     }
 }
