@@ -1532,6 +1532,22 @@ a,
     padding: 10px 24px;
   }
 }
+@media (max-width: 767px) {
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    height: 42px;
+    padding: 8px 15px;
+  }
+}
+@media (max-width: 425px) {
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    height: 38px;
+    padding: 6px 12px;
+  }
+}
 .contact-form input::-moz-placeholder, .contact-form select::-moz-placeholder, .contact-form textarea::-moz-placeholder {
   color: #a8b1b4;
 }
@@ -1657,6 +1673,11 @@ a,
 .jobportal .contact-form .form-group {
   margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .jobportal .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+}
 .jobportal-list {
   position: relative;
   padding: 48px;
@@ -1741,4 +1762,153 @@ a,
 }
 .bredcrumb ul li img.next {
   margin-left: 15px;
+}
+
+.jobportal.custom-padding {
+  padding: 50px 0;
+}
+@media (max-width: 500px) {
+  .jobportal.custom-padding {
+    padding: 30px 0;
+  }
+}
+.jobportal p,
+.jobportal h2,
+.jobportal h3,
+.jobportal li {
+  color: #2B3032;
+}
+.jobportal-details .img-style {
+  position: relative;
+  margin-bottom: 3.125rem;
+}
+.jobportal-details .img-style img {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.jobportal-details .content-style {
+  margin-bottom: 6.25rem;
+}
+.jobportal-details .content-style h2 {
+  font-family: "Barlow-bold";
+  color: #2B3032;
+  margin-bottom: 3rem;
+}
+.jobportal-details .content-style h3 {
+  font-size: 2.5rem;
+  color: #2B3032;
+  margin-bottom: 1.5rem;
+}
+.jobportal-details .content-style p {
+  color: #2B3032;
+  margin-bottom: 1.875rem;
+}
+.jobportal-details .content-style ul {
+  margin-bottom: 3rem;
+}
+.jobportal-details .content-style ul.ul1 li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.jobportal-details .content-style ul.ul1 li p {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.jobportal-details .content-style ul.ul3 {
+  padding-left: 3rem;
+}
+.jobportal-details .content-style ul.ul3 li {
+  list-style-type: disc;
+}
+.jobportal-details .content-style ul li {
+  color: #2B3032;
+  margin-bottom: 1rem;
+}
+.jobportal-details .content-style ul li p span {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #F04040;
+  color: #F04040;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Barlow-extrabold";
+}
+.jobportal-details .content-style ul li p i {
+  color: #F04040;
+  width: 30px;
+  text-align: center;
+  font-size: 1.875rem;
+}
+.jobportal-apply {
+  padding: 3.438rem;
+}
+@media (max-width: 767px) {
+  .jobportal-apply {
+    padding: 3rem;
+  }
+}
+@media (max-width: 425px) {
+  .jobportal-apply {
+    padding: 1.5rem;
+  }
+}
+.jobportal-apply h2 {
+  font-family: "Barlow-bold";
+  color: #2B3032;
+  margin-bottom: 1.5rem;
+}
+.jobportal-apply .contact-form .form-group label {
+  font-size: 1rem;
+}
+.jobportal-apply .contact-form .form-group.agreement {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+.jobportal-apply .contact-form .form-group.agreement #agreement {
+  height: auto;
+  position: relative;
+  top: 5px;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 8px;
+}
+.jobportal-apply .contact-form .form-group.agreement label {
+  display: inline-block;
+}
+.jobportal-apply .contact-form h3 {
+  color: #2B3032;
+  font-family: "Barlow-bold";
+  font-size: 2.25rem;
+}
+.jobportal-apply .contact-form #custom-button {
+  width: 12rem;
+  border: none;
+  height: 62px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+@media (max-width: 991px) {
+  .jobportal-apply .contact-form #custom-button {
+    height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .jobportal-apply .contact-form #custom-button {
+    height: 38px;
+  }
 }/*# sourceMappingURL=style.min.css.map */
