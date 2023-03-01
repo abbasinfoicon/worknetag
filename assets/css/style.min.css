@@ -1659,7 +1659,22 @@ a,
 }
 
 .jobportal iframe {
-  height: 1000px;
+  height: 100vh;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.jobportal iframe::-webkit-scrollbar {
+  width: 5px;
+}
+.jobportal iframe::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.jobportal iframe::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.jobportal iframe::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 .jobportal .contact-form {
   margin-top: 0;
