@@ -1305,10 +1305,10 @@ section {
 }
 .title h2 span {
   color: #F04040;
-  text-decoration: line-through;
+  text-decoration: none;
 }
 .title h2 span.withDash {
-  text-decoration: none;
+  text-decoration: line-through;
 }
 
 h1 {
