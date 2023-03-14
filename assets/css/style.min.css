@@ -1249,6 +1249,10 @@ section {
   font-family: "Barlow-medium";
   color: #fff;
 }
+.separates-left .cutsom-btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
 .separates-img .img-style {
   height: 434px;
   overflow: hidden;

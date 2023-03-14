@@ -21,6 +21,15 @@
                 color: $white;
             }
         }
+
+        .cutsom {
+            &-btn {
+                &:hover {
+                    color: $white;
+                    border-color: $white;
+                }
+            }
+        }
     }
 
     &-img {
