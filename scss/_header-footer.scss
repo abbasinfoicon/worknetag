@@ -256,10 +256,19 @@ section {
 
     ul {
       li {
+        color: $lgtblack;
+        display: block;
+        margin-bottom: 12px;
+
+        &.address {
+          line-height: 2;
+          margin-top: -7px;
+          margin-bottom: 7px;
+        }
+
         a {
           color: $lgtblack;
           display: block;
-          margin-bottom: 12px;
 
           @media (max-width: 768px) {
             margin-bottom: 5px;

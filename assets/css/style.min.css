@@ -501,10 +501,19 @@ section {
   margin-bottom: 15px;
   font-family: "Barlow-medium";
 }
-.footer-menu ul li a {
+.footer-menu ul li {
   color: #2B3032;
   display: block;
   margin-bottom: 12px;
+}
+.footer-menu ul li.address {
+  line-height: 2;
+  margin-top: -7px;
+  margin-bottom: 7px;
+}
+.footer-menu ul li a {
+  color: #2B3032;
+  display: block;
 }
 @media (max-width: 768px) {
   .footer-menu ul li a {
