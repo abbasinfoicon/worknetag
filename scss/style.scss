@@ -162,6 +162,28 @@ input {
   }
 }
 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $txt;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $red;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $lgtblack;
+}
+
 //main-scss
 @import "header-footer";
 @import "slider";
