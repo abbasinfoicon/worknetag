@@ -713,7 +713,6 @@ section {
      object-fit: cover;
 }
 .slider-home .item .caption {
-  max-width: 615px;
   position: absolute;
   z-index: 1;
   top: 50%;
