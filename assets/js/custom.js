@@ -6,7 +6,7 @@
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 138) {
+    if (scroll > 1) {
         $('.header').addClass('sticky');
         $('.menu').addClass('menuSticky');
     } else {

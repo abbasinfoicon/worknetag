@@ -337,9 +337,6 @@ section {
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 9;
   padding: 40px 0;
   transition: 0.5s;
 }
@@ -349,6 +346,9 @@ section {
   }
 }
 .header.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 9;
   padding: 15px 0;
 }
 .header-full .row {
