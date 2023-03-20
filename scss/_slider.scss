@@ -1,7 +1,8 @@
 .slider {
     padding: 0;
 
-    &-home {
+    &-home,
+    &-banner {
         .item {
             position: relative;
             height: 90vh;
@@ -26,6 +27,7 @@
 
             img {
                 height: 100%;
+                width: 100%;
                 object-fit: cover;
             }
 
@@ -80,6 +82,14 @@
                         border-color: $white;
                     }
                 }
+            }
+        }
+    }
+
+    &-banner {
+        .item {
+            .caption {
+                max-width: 50%;
             }
         }
     }

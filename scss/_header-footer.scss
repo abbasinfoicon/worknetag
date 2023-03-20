@@ -113,8 +113,12 @@ section {
 }
 
 .logo {
+  height: 50px;
+  
   a {
     img {
+      max-width: 100%;
+      height: auto;
       transition: width .5s;
 
       @media (max-width: 500px) {
