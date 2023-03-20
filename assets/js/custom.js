@@ -1,5 +1,22 @@
+
+/*========================================================================================================
+================================ Sticky header ===================================================================
+===========================================================================================================*/
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 138) {
+        $('.header').addClass('sticky');
+        $('.menu').addClass('menuSticky');
+    } else {
+        $('.header').removeClass('sticky');
+        $('.menu').removeClass('menuSticky');
+    }
+});
+
 /*=====================================================================
-    ==========================  03-ScrollToptoBottom  =========================
+    ==========================  ScrollToptoBottom  =========================
     ========================================================================*/
 
 $(window).scroll(function () {
@@ -19,12 +36,16 @@ $('#scroll').click(function () {
 ===========================================================================================================*/
 
 $('.slider-home').owlCarousel({
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
     items: 1,
-    loop: false,
+    loop: true,
     nav: false,
     dots: false,
-    autoplay: false,
-    smartSpeed: 700,
+    autoplay: true,
+    smartSpeed: 700, 
+    mouseDrag: false,
+    touchDrag: false
 });
 
 $('.review-carousel').owlCarousel({
@@ -35,7 +56,7 @@ $('.review-carousel').owlCarousel({
     dots: false,
     autoplay: true,
     autoplayTimeout: 10000,
-    autoplayHoverPause:false,
+    autoplayHoverPause: false,
     smartSpeed: 700,
 });
 

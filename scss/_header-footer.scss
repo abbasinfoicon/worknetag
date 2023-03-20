@@ -51,13 +51,21 @@ section {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  padding: 40px 0;
+  transition: .5s;
+
+  @media (max-width: 991px) {
+    padding: 15px 0;
+  }
+
+  &.sticky {
+    padding: 15px 0;
+  }
+
   &-full {
-    padding: 40px 0;
-
-    @media (max-width: 991px) {
-      padding: 15px 0;
-    }
-
     .row {
       align-items: center;
 
@@ -107,6 +115,8 @@ section {
 .logo {
   a {
     img {
+      transition: width .5s;
+
       @media (max-width: 500px) {
         width: 180px;
       }
@@ -114,8 +124,19 @@ section {
   }
 }
 
+.sticky {
+  .logo {
+    a {
+      img {
+        width: 180px;
+      }
+    }
+  }
+}
+
 .menu {
-  justify-content: center;
+  justify-content: flex-end;
+  margin-right: 30px;
 
   @media (max-width: 991px) {
     position: absolute;
@@ -131,6 +152,7 @@ section {
     display: block !important;
     opacity: 0;
     overflow-x: hidden;
+    margin-right: 0;
 
     &.show {
       width: 250px;
@@ -157,6 +179,12 @@ section {
         width: 100%;
       }
 
+      &.active {
+        a {
+          color: $red;
+        }
+      }
+
       a {
         font-size: 1.5rem;
         color: $lgtblack;
@@ -181,6 +209,14 @@ section {
         &:hover {
           color: $red;
         }
+      }
+    }
+  }
+
+  &Sticky {
+    li {
+      a {
+        font-size: 1.25rem;
       }
     }
   }
@@ -226,6 +262,13 @@ section {
   }
 }
 
+.sticky {
+  .cutsom-btn {
+    padding: 6px 25px;
+    font-size: 1rem;
+  }
+}
+
 .footer {
   padding-top: 60px;
 
@@ -242,6 +285,30 @@ section {
       img {
         width: 198px;
       }
+    }
+  }
+
+  .membership {
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0;
+    padding: 30px 0;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    background: #f5f5f5;
+
+    .footer-menu {
+      margin-bottom: 0;
+
+      ul {
+        li {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    h3 {
+      margin-bottom: 25px;
     }
   }
 

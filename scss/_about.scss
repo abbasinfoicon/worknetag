@@ -17,6 +17,11 @@
         background-color: #FAFAFA;
         @include border-radius(8px);
         margin-bottom: 30px;
+        min-height: 270px;
+        cursor: pointer;
+        transition: .5s;
+
+
 
         @media (max-width: 1366px) {
             padding: 15px;
@@ -56,12 +61,18 @@
         p {
             color: $txt;
             line-height: 1.2;
+        }
 
-            @media (min-width: 768px) {
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+        &:hover {
+            background: $red;
+            margin-top: -10px;
+
+            h3 {
+                color: $white;
+            }
+
+            p {
+                color: #ffc1c3;
             }
         }
     }
