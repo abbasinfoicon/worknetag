@@ -844,6 +844,9 @@ section {
   background: #F04040;
   margin-top: -10px;
 }
+.aboutBx-sec:hover .img-style p {
+  color: #000;
+}
 .aboutBx-sec:hover h3 {
   color: #fff;
 }
@@ -1108,10 +1111,12 @@ section {
 .review .aboutBx-sec {
   margin-bottom: 0;
   margin-top: 30px;
+  min-height: 300px;
 }
 @media (max-width: 991px) {
   .review .aboutBx-sec {
     margin-top: 15px;
+    min-height: auto;
   }
 }
 .review .aboutBx-sec .img-style {

@@ -67,6 +67,12 @@
             background: $red;
             margin-top: -10px;
 
+            .img-style {    
+                p {
+                    color: $black;
+                }
+            }
+
             h3 {
                 color: $white;
             }
